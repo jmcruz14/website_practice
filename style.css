@@ -1,0 +1,57 @@
+header.title-header {
+	display: flex;
+	justify-content: center;
+	font-size: 2em;
+	margin: 2em;
+}
+
+#subheading {
+	font-size: 0.5em;
+}
+
+body {
+	font-family: Avenir, Arial, Courier, Garamond, Verdana;
+	box-sizing: border-box;
+	border: 1px solid black;
+	--box-border: 1px solid black;
+}
+
+main {
+	border: var(--box-border)
+}
+
+main > :not(section:first-of-type) {
+	background-color: grey;
+}
+
+section {
+	border: var(--box-border);
+	display: flex;
+	align-items: center;
+	margin-block: 1em 1em;
+}
+
+
+section > img {
+	max-width: 20%;
+	flex-basis: 5em;
+	margin-inline-start: 1em;
+	margin-inline-end: 1em;
+	padding-block-start: 1em;
+	padding-block-end: 1em;
+	object-fit: cover;
+}
+
+section > header {
+	margin-inline-start: 2em;
+	margin-inline-end: 2em;
+}
+
+
+/* header > section {
+	display: 
+}
+
+main > :not(section:first-of-type) {
+
+} */
